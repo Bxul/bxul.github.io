@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Byeol's profile</title>
+        <script defer src="index.js"></script>
+        <link href="style.css" rel="stylesheet" />
+        <link rel="icon" href="./favicon.ico" />
+        <script
+            src="https://kit.fontawesome.com/4e86c6de6f.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body
+        oncontextmenu="return false"
+        ondragstart="return false"
+        onselectstart="return false"
+    >
+        <article>
+            <header>
+                <nav id="nav">
+                    <img id="nav_img" src="./img/Byeol.png" />
+                    <ul class="nav_links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about_me">About me</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#link">Link</a></li>
+                    </ul>
+                    <a class="mobile_nav_icon" onclick="mobile_nav()">
+                        <i class="fa-solid fa-bars fa-2x"></i>
+                    </a>
+                </nav>
+                <div id="home"></div>
+                <img
+                    class="hidden img"
+                    src="./img/Byeol.png"
+                    onclick="easteregg()"
+                />
+                <div id="site_top_name" class="hidden">
+                    <span>Byeol Profile</span>
+                </div>  
+                <div id="hi" class="hidden">
+                    <h1>제 프로필 사이트에 오신것을 환영합니다.</h1>
+                </div>
+            </header>
+            <div id="about_css" class="hidden">
+                <div id="about_me"></div>
+                <h1>안녕하세요 한별이라고 합니다.</h1>
+                <h1>마인크래프트의 관한 호스팅을 알려드릴게요 </h1>
+                <h1>컴퓨터에 관심이 많습니다</h1>
+                <h1>마인크래프트랑 얼불춤을 주로 자주하는 게임입니다</h1>
+            </div>
+            <div id="skill_css">
+                <div id="skills"></div>
+                <h1 class="hidden">아침 점심 저녁 밥추천해주세요 </h1>
+                <div id="skill_img_css" class="hiddenImg">
+                    <div class="skillHidden skillBox two">
+                        <img class="skillImg" src="./img/라면.png" />
+                    </div>
+                    <div class="skillHidden skillBox seven">
+                        <img class="skillImg" src="./img/골드치킨.png" />
+                    </div>
+                    <div class="skillHidden skillBox three">
+                        <img class="skillImg" src="./img/피자.png" />
+                    </div>
+                    <div class="skillHidden skillBox three">
+                        <img class="skillImg" src="./img/minecraft.png" />
+                    </div>
+                </div>
+                <h1 class="hidden" id="trans">저가 주로하는 게임이에요 :D</h1>
+                <div id="skill_img_css" class="hiddenImg">
+                    <div class="skillHidden skillBox two">
+                        <img class="skillImg" src="./img/hypixel.png" />
+                    </div>
+                    <div class="skillHidden skillBox seven">
+                        <img class="skillImg" src="./img/lunar.png" />
+                    </div>
+                    <div class="skillHidden skillBox three">
+                        <img class="skillImg" src="./img/minecraft.png" />
+                    </div>
+                    <div class="skillHidden skillBox three">
+                        <img class="skillImg" src="./img/unnamed.png" />
+                    </div>
+                </div>
+            </div>
+            <div id="link_css" class="hidden">
+                <h1>소셜 링크에요</h1>
+                <h3>(마우스 커서를 위에 올리거나 클릭해보세요)</h3>
+                <div id="link_icon_css" class="hidden">
+                    <div class="link">
+                        <span id="hover" class="hover_" onclick="MinecrftLink()">Bxul</span>
+                        <img id="mine" src="./img/마인크래프트.png" onclick="MinecraftLink()"/>
+                    </div>
+                    <div class="link">
+                        <span id="hover" class="hover_">Byeol#1111l</span>
+                        <i class="fa-brands fa-discord" onclick="discordLink()"></i>
+                    </div>
+                </div>
+                <div id="link"></div>
+            </div>
+
+            <footer>
+                <p id="copyright">
+                    &#169; Copyright 2023 noobnuby. All Rights Reserved.
+                </p>
+            </footer>
+        </article>
+    </body>
+</html>
